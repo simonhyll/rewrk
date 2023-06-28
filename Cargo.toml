@@ -1,8 +1,13 @@
 [package]
 name = "rewrk"
+description = "A simple HTTP benchmarking tool"
 version = "0.3.2"
-authors = ["Harrison Burt <57491488+ChillFish8@users.noreply.github.com>", "Programatik <programatik29@gmail.com>"]
+authors = [
+    "Harrison Burt <57491488+ChillFish8@users.noreply.github.com>",
+    "Programatik <programatik29@gmail.com>",
+]
 edition = "2018"
+license = "MIT"
 
 [dependencies]
 anyhow = "1"
@@ -21,6 +26,4 @@ tokio-native-tls = "0.3"
 tower = { version = "0.4", features = ["util"] }
 
 [workspace]
-members = [
-    "rewrk-core"
-]
+members = ["rewrk-core"]
